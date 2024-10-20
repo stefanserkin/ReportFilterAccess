@@ -6,7 +6,7 @@
     }
   ],
   "name": "ReportFilterAccess",
-  "namespace": "",
+  "namespace": "stoplying",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "61.0"
 }
