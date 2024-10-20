@@ -1,5 +1,20 @@
 <template>
     <lightning-card title="Report Filter Access" icon-name="standard:report">
-        <p class="slds-var-m-around_medium">Coming Soon!</p>
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+                type="text"
+                label="Report Id"
+                value={reportId}
+                onchange={handleReportIdChange}
+            ></lightning-input>
+            <lightning-button
+                variant="brand"
+                label="Validate"
+                title="Validate"
+                onclick={handleValidate}
+                disabled={validateButtonIsDisabled}
+                class="slds-var-m-top_medium"
+            ></lightning-button>
+        </div>
     </lightning-card>
 </template>
