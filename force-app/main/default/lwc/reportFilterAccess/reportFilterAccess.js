@@ -8,7 +8,9 @@ export default class ReportFilterAccess extends LightningElement {
     reportId;
 
     get validateButtonIsDisabled() {
-        const isValidId = this.reportId && (this.reportId.length === 15 || this.reportId.length === 18);
+        const isValidId = this.reportId && 
+            this.reportId.startsWith('00O') && 
+            (this.reportId.length === 15 || this.reportId.length === 18);
         return !isValidId;
     }
 
