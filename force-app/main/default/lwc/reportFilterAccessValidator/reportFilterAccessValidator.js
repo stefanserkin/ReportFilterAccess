@@ -2,9 +2,10 @@ import { LightningElement } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 import validate from '@salesforce/apex/ReportFilterAccessController.validate';
 
-export default class ReportFilterAccess extends LightningElement {
+export default class ReportFilterAccessValidator extends LightningElement {
     isLoading = false;
     error;
+    
     reportId;
 
     get validateButtonIsDisabled() {
